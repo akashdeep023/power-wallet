@@ -12,8 +12,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Power Wallet",
-	description: "Your Money, Your Power.",
+	title: "SupraPay",
+	description: "Super. Simple. Suprapay.",
 };
 
 export default function RootLayout({

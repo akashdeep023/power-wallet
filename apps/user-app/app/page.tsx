@@ -7,7 +7,7 @@ export default function Home() {
 				<h1 className="text-3xl font-bold underline">Hello world!</h1>
 			</main>
 			<footer className={styles.footer}>
-				Copyright © 2025 Power Wallet
+				Copyright © 2025 SupraPay
 			</footer>
 		</div>
 	);
