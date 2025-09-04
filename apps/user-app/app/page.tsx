@@ -7,11 +7,6 @@ export default function Home() {
 	return (
 		<div className={""}>
 			<main className={""}>
-				<Appbar
-					onSignin={signIn}
-					onSignout={signOut}
-					user={session.data?.user}
-				/>
 				<h1 className="text-3xl font-bold underline text-blue-600">
 					Hello world!
 				</h1>

@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "../provider";
 import { Inter } from "next/font/google";
+import { Providers } from "../provider";
+import { AppbarClient } from "../components/AppbarClient";
+import { JSX } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "SupraPay",
-	description: "Super. Simple. Suprapay.",
+	title: "Wallet",
+	description: "Simple wallet app",
 };
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode;
-}>) {
+}): JSX.Element {
 	return (
 		<html lang="en">
 			<Providers>
+				<AppbarClient />
 				<body className={inter.className}>{children}</body>
 			</Providers>
 		</html>
