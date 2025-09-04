@@ -1,0 +1,13 @@
+{
+	"name": "@repo/store",
+	"version": "1.0.0",
+	"private": true,
+	"peerDependencies": {
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"recoil": "^0.7.7"
+	},
+	"exports": {
+		".": "./src/index.ts"
+	}
+}

@@ -1,19 +1,21 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "../provider";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "../provider";
+import { JSX } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "SupraPay",
-	description: "Super. Simple. Suprapay.",
+	title: "Merchant SuperPay",
+	description: "Super Simple. Suprapay.",
 };
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode;
-}>) {
+}): JSX.Element {
 	return (
 		<html lang="en">
 			<Providers>
