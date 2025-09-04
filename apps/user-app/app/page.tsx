@@ -1,14 +1,22 @@
-import styles from "./page.module.css";
+"use client";
+import { Appbar } from "@repo/ui/appbar";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Home() {
+	const session = useSession();
 	return (
-		<div className={styles.page}>
-			<main className={styles.main}>
-				<h1 className="text-3xl font-bold underline">Hello world!</h1>
+		<div className={""}>
+			<main className={""}>
+				<Appbar
+					onSignin={signIn}
+					onSignout={signOut}
+					user={session.data?.user}
+				/>
+				<h1 className="text-3xl font-bold underline text-blue-600">
+					Hello world!
+				</h1>
 			</main>
-			<footer className={styles.footer}>
-				Copyright © 2025 SupraPay
-			</footer>
+			<footer className={""}>Copyright © 2025 SupraPay</footer>
 		</div>
 	);
 }
